@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=periodicBorder
+comment0.text=\n\ Write\ a\ description\ of\ class\ periodicBorder\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=periodicBorder()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ periodicBorder\n
+comment2.params=grid\ x
+comment2.target=boolean\ afterHorizontalEdge(Grid,\ int)
+comment2.text=\n\ Checks\ if\ neighbour\ of\ a\ cell\ is\ out\ of\ grid.\n\ @param\ grid\ the\ board\ where\ the\ cell\ exists\n\ @param\ x\ the\ horizontal\ position\ of\ the\ cell\n\ @return\ the\ true\ if\ x\ is\ out\ of\ the\ horizintal\ length\ of\ grid\n
+comment3.params=grid\ x
+comment3.target=boolean\ beforeHorizontalBeginning(Grid,\ int)
+comment3.text=\n\ Checks\ if\ neighbour\ of\ a\ cell\ is\ out\ of\ grid.\n\ @param\ grid\ the\ board\ where\ the\ cell\ exists\n\ @param\ x\ the\ horizontal\ position\ of\ the\ cell\n\ @return\ the\ true\ if\ x\ is\ out\ of\ the\ horizintal\ beggining\ of\ grid\ \n
+comment4.params=grid\ x
+comment4.target=boolean\ afterVerticalEdge(Grid,\ int)
+comment4.text=\n\ Checks\ if\ neighbour\ of\ a\ cell\ is\ out\ of\ grid.\n\ @param\ grid\ the\ board\ where\ the\ cell\ exists\n\ @param\ y\ the\ vertical\ position\ of\ the\ cell\n\ @return\ the\ true\ if\ y\ is\ out\ of\ the\ vertical\ length\ of\ grid\n
+comment5.params=grid\ x
+comment5.target=boolean\ beforeVerticalBeginning(Grid,\ int)
+comment5.text=\n\ Checks\ if\ neighbour\ of\ a\ cell\ is\ out\ of\ grid.\n\ @param\ grid\ the\ board\ where\ the\ cell\ exists\n\ @param\ y\ the\ vertical\ position\ of\ the\ cell\n\ @return\ the\ true\ if\ y\ is\ out\ of\ the\ vertical\ beggining\ of\ grid\ \n
+comment6.params=grid\ x
+comment6.target=int\ horFix(Grid,\ int)
+comment6.text=\n\ Sets\ x\ on\ other\ side\ of\ grid\ if\ it\ is\ out\ of\ bounds.\n\ @param\ grid\ the\ board\ where\ the\ cell\ exists\n\ @param\ x\ the\ horizontal\ position\ of\ the\ cell\n\ @return\ int\ value\ where\ x\ should\ be\n
+comment7.params=grid\ y
+comment7.target=int\ vertFix(Grid,\ int)
+comment7.text=\n\ Sets\ y\ on\ other\ side\ of\ grid\ if\ it\ is\ out\ of\ bounds.\n\ @param\ grid\ the\ board\ where\ the\ cell\ exists\n\ @param\ y\ the\ vertical\ position\ of\ the\ cell\n\ @return\ int\ value\ where\ y\ should\ be\n
+numComments=8

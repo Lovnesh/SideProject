@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=TUI
+comment0.text=\n\ Initialises\ the\ text\ user\ interface\ for\ the\ game\ of\ life.\n
+comment1.params=
+comment1.target=TUI()
+comment2.params=grid
+comment2.target=void\ draw(Grid)
+comment2.text=\n\ Draws\ the\ grid\ with\ the\ given\ state\ of\ the\ matrix.\n\ @param\ grid\ the\ grid\ to\ be\ drawn\n
+numComments=3

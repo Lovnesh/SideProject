@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Neighbourhood
+comment1.params=
+comment1.target=Neighbourhood()
+comment2.params=grid\ row\ column
+comment2.target=java.util.ArrayList\ generateNeighbourhood(Grid,\ int,\ int)
+numComments=3

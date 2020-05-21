@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Cell
+comment1.params=
+comment1.target=Cell()
+comment2.params=state
+comment2.target=Cell(boolean)
+comment3.params=
+comment3.target=boolean\ getState()
+comment4.params=state
+comment4.target=void\ setState(boolean)
+numComments=5
