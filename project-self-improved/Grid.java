@@ -20,13 +20,18 @@ public class Grid
         initialiseGrid();
     }
     
-    public Grid(int row, int column){
+    /**
+     * Makes a grid with the given row and column
+     * @param row the row length of the grid
+     * @param column the column length of the grid
+     */
+    public Grid(final int row, final int column){
         grid = new Cell[row][column];
         initialiseGrid();
     }
     
     /**
-     * Fills up column by column.
+     * Fills up the grid column by column.
      */
     private void initialiseGrid(){
         int rowLength = grid.length;
@@ -39,7 +44,8 @@ public class Grid
     }
     
     /**
-     * Horizontal Length
+     * Horizontal Length of the grid.
+     * @return the horizontal length of the grid
      */
     public int getRowLength(){
         return grid.length;
@@ -47,6 +53,7 @@ public class Grid
     
     /**
      * Vertical Length
+     * @return the horizontal length of the grid
      */
     public int getColumnLength(){
         return grid[0].length;
@@ -57,20 +64,40 @@ public class Grid
      *   R R
      * C 0 1
      * C 1 1
+     * @param row the row in the grid
+     * @param column the column in the grid
+     * @return Cell in the given row and column
      */
-    public Cell cellStateInGrid(int row, int column){
+    public Cell cellStateInGrid(final int row, final int column){
         return grid[row][column];
     }
     
-    public boolean cellGetState(int row, int column) {
+    /**
+     * Gets the state of the cell in the grid with arbitrary row and column
+     * @param row the row in which the cell exists
+     * @param column the column in which the cell exists
+     * @return boolean the state of the cell
+     */
+    public boolean cellGetState(final int row, final int column) {
         return grid[row][column].getState();
     }
     
-    public void changeGridState(int row, int column, boolean state) {
+    /**
+     * Changes the state of the cell at a given location in the grid.
+     * @param row the row in which the cell exists
+     * @param column the column in which the cell exists
+     * @param state the state of the cell
+     */
+    public void changeGridState(final int row, final int column, final boolean state) {
         grid[row][column].setState(state);
     }
     
-    public void reverseState(int row, int column) {
+    /**
+     * Reverses the state of the cell at a given location in the grid.
+     * @param row the row in which the cell exists
+     * @param the column in which the cell exists
+     */
+    public void reverseState(final int row, final int column) {
         grid[row][column].setState(!grid[row][column].getState());
     }
        

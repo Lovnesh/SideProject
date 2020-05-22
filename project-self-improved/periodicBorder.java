@@ -4,13 +4,13 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class periodicBorder
+public class PeriodicBorder
 {
 
     /**
      * Constructor for objects of class periodicBorder
      */
-    public periodicBorder()
+    public PeriodicBorder()
     {
     }
 

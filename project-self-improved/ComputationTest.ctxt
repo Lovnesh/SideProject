@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ComputationTest
+comment0.text=\n\ The\ test\ class\ ComputationTest.\n\n\ @author\ \ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=ComputationTest()
+comment1.text=\n\ Default\ constructor\ for\ test\ class\ ComputationTest\n
+comment2.params=
+comment2.target=void\ TestNeighbourhoodCount()
+numComments=3

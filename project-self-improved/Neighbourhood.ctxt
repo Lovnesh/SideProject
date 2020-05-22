@@ -4,4 +4,5 @@ comment1.params=
 comment1.target=Neighbourhood()
 comment2.params=grid\ row\ column
 comment2.target=java.util.ArrayList\ generateNeighbourhood(Grid,\ int,\ int)
+comment2.text=\n\ Adds\ the\ neighbours\ of\ the\ cell\ in\ a\ given\ position\ to\ an\ ArrayList\n\ Returns\ them\ in\ an\ ArrayList.\n\ @param\ Grid\ the\ grid\ where\ the\ cell\ exists\n\ @param\ row\ the\ row\ where\ the\ cell\ is\ located\n\ @param\ column\ the\ column\ where\ the\ cell\ is\ located\n\ @return\ ArrayList<Boolean>\ the\ states\ of\ the\ neighbouring\ cells\ expect\ itself\n
 numComments=3

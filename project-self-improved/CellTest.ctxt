@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=CellTest
+comment0.text=\n\ The\ test\ class\ CellTest.\n\n\ @author\ \ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ testGetState()
+comment2.params=
+comment2.target=void\ testSetState()
+numComments=3

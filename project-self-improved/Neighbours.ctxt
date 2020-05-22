@@ -5,5 +5,5 @@ comment1.params=
 comment1.target=Neighbours()
 comment2.params=grid
 comment2.target=java.util.HashMap\ getAllNeighbours(Grid)
-comment2.text=\n\ Fills\ the\ neighbours\ column\ by\ column\n\ |1\ 5\ 9\ \ \n\ |2\ 6\ 10\ \ \ \n\ |3\ 7\ 11\n\ |4\ 8\ 12\n\ V\n\ Fills\ like\ that\n
+comment2.text=\n\ Fills\ the\ neighbours\ column\ by\ column.\n\ |1\ 5\ 9\ \ \n\ |2\ 6\ 10\ \ \ \n\ |3\ 7\ 11\n\ |4\ 8\ 12\n\ V.\n\ Fills\ like\ that.\n\ Fills\ it\ in\ a\ HashMap.\n\ @param\ the\ grid\ where\ the\ cells\ exist\n\ @return\ HashMap\ the\ neighbourCount\ of\ every\ cell\ mapped\ to\ it\n
 numComments=3

@@ -1,8 +1,8 @@
 #BlueJ class context
-comment0.target=periodicBorder
+comment0.target=PeriodicBorder
 comment0.text=\n\ Write\ a\ description\ of\ class\ periodicBorder\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
-comment1.target=periodicBorder()
+comment1.target=PeriodicBorder()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ periodicBorder\n
 comment2.params=grid\ x
 comment2.target=boolean\ afterHorizontalEdge(Grid,\ int)

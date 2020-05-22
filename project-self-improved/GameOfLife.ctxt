@@ -2,12 +2,17 @@
 comment0.target=GameOfLife
 comment1.params=
 comment1.target=GameOfLife()
+comment1.text=\n\ Constructor\ for\ the\ class\ GameOfLife.\n
 comment2.params=row\ column
 comment2.target=GameOfLife(int,\ int)
+comment2.text=\n\ Constructor\ for\ the\ class\ GameOfLife.\n\ @param\ row\ the\ row\ length\ of\ the\ grid\n\ @param\ column\ the\ column\ length\ of\ the\ grid\n
 comment3.params=originalState\ neighbours
 comment3.target=boolean\ nextCellState(boolean,\ int)
+comment3.text=\n\ Computes\ the\ next\ state\ of\ the\ cell\ object\ depending\ on\ its\ neighbours\ and\ previous\ state.\n\ @param\ originalState\ of\ the\ cell\n\ @param\ neighbours\ of\ the\ cell\n\ @return\ boolean\ the\ next\ state\ of\ the\ cell\n
 comment4.params=
 comment4.target=Grid\ nextGridState()
+comment4.text=\n\ Computes\ the\ next\ state\ of\ the\ grid.\n
 comment5.params=row\ column
 comment5.target=void\ makeAlive(int,\ int)
+comment5.text=\n\ Makes\ the\ cell\ at\ a\ given\ position\ alive.\n
 numComments=6

@@ -13,8 +13,7 @@ public class GenerateGame
     /**
      * Constructor for objects of class GenerateGame
      */
-    public GenerateGame()
-    {
+    public GenerateGame() {
         // initialise instance variables
         reader = new StandardInput();
         printWelcome();
@@ -22,7 +21,10 @@ public class GenerateGame
         game = g;
         start();
     }
-
+    
+    /**
+     * Start method to start playing the game.
+     */
     public void start() {
         boolean finished = false;
         
@@ -37,11 +39,16 @@ public class GenerateGame
                 System.out.println("How many cells would you like to make alive?");
                 int h = reader.getNumberInput();
                 game = makeAlive(game, h);
+            } else if(input.contains("help")) {
+                printAvailableCommands();
             }
         }
     }
     
-    private void printWelcome(){
+    /**
+     * Prints the welcome statement.
+     */
+    private void printWelcome() {
         System.out.println("Welcome to the Game of Life");
         System.out.println("This is a model game implementation of the Conways Game of Life");
         System.out.println("You will soon be asked to create your desired grid.");
@@ -49,17 +56,24 @@ public class GenerateGame
         System.out.println("Type 'Help' when you're stuck");
         System.out.println("We will assist you with any problem you might have");
         System.out.println("Your available commands are:");
+        System.out.println();
         printAvailableCommands();
     }
     
-    private void printAvailableCommands(){
+    /**
+     * Prints the commands.
+     */
+    private void printAvailableCommands() {
         System.out.println("Step -> The object is then transformed to its next state");
         System.out.println("makeAlive -> Makes the Cell at a given point alive");
         System.out.println("Bye -> To exit the game, type 'Bye'.");
         System.out.println();
     }
     
-    private GameOfLife gameOfLifeInitialiser(){
+    /**
+     * Intialises the GameOfLife grid.
+     */
+    private GameOfLife gameOfLifeInitialiser() {
         System.out.println("Enter the number of rows you want for the Grid");
         int row = reader.getNumberInput();
         System.out.println("Enter the number of columns you want for the Grid");
@@ -68,16 +82,25 @@ public class GenerateGame
         return game;
     }
     
-    private String getMethodInput(){
+    private String getMethodInput() {
         String input = reader.getStringInput();
         return input;
     }
     
-    private void step(GameOfLife grid){
+    /**
+     * Calls the nextGridState method of the game of life.
+     * @param GameOfLife the grid to be operated on
+     */
+    private void step(GameOfLife grid) {
         Grid g = grid.nextGridState();
         TUI.draw(g);
     }
     
+    /**
+     * Makes the cell alive at a given point.
+     * @param game the Game of life 
+     * @param howMany the number of cells to be made alive
+     */
     private GameOfLife makeAlive(GameOfLife game, int howMany) {
         for (int i = 0; i < howMany; i++) {
             System.out.println("Enter the row coordinate for the Cell");

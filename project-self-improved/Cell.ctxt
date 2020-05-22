@@ -2,10 +2,14 @@
 comment0.target=Cell
 comment1.params=
 comment1.target=Cell()
+comment1.text=\n\ Constructor\ for\ class\ cell\n
 comment2.params=state
 comment2.target=Cell(boolean)
+comment2.text=\n\ Constructor\ for\ class\ cell.\n\ @param\ state\ of\ the\ cell\n
 comment3.params=
 comment3.target=boolean\ getState()
+comment3.text=\n\ Returns\ the\ state\ of\ the\ cell.\n\ @return\ boolean\ the\ state\ of\ the\ cell\n
 comment4.params=state
 comment4.target=void\ setState(boolean)
+comment4.text=\n\ Sets\ the\ state\ of\ the\ cell\ after\ the\ cell\ has\ been\ initialised.\n\ @param\ the\ state\ to\ be\ set\n
 numComments=5
