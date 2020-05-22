@@ -11,8 +11,8 @@ public class Neighbourhood{
         for (int i = 0; i < 3; i++){
             int b = column - 1;
             for(int j = 0; j < 3; j++){
-                b = periodicBorder.horFix(grid,b);
-                a = periodicBorder.vertFix(grid,a);
+                b = periodicBorder.vertFix(grid,b);
+                a = periodicBorder.horFix(grid,a);
                 if (a == row && b == column){
                     b++;
                 } else{

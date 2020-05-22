@@ -25,6 +25,9 @@ public class Grid
         initialiseGrid();
     }
     
+    /**
+     * Fills up column by column.
+     */
     private void initialiseGrid(){
         int rowLength = grid.length;
         int columnLength = grid[0].length;
@@ -35,14 +38,26 @@ public class Grid
         }
     }
     
+    /**
+     * Horizontal Length
+     */
     public int getRowLength(){
         return grid.length;
     }
     
+    /**
+     * Vertical Length
+     */
     public int getColumnLength(){
         return grid[0].length;
     }
     
+    /**
+     * Fetches a cell from the given row and column
+     *   R R
+     * C 0 1
+     * C 1 1
+     */
     public Cell cellStateInGrid(int row, int column){
         return grid[row][column];
     }

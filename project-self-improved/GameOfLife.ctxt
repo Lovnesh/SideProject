@@ -1,22 +1,13 @@
 #BlueJ class context
 comment0.target=GameOfLife
-comment0.text=\n\ Write\ a\ description\ of\ class\ GameOfLife\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=GameOfLife()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GameOfLife\n
-comment2.params=rows\ columns
+comment2.params=row\ column
 comment2.target=GameOfLife(int,\ int)
-comment3.params=
-comment3.target=Grid\ getGrid()
-comment4.params=row\ column
-comment4.target=boolean\ nextCellState(int,\ int)
-comment4.text=\n\ \ \ \ public\ void\ step()\ {\n\ \ \ \ \ \ \ \ int\ rowCount\ \=\ grid.getRowLength();\n\ \ \ \ \ \ \ \ int\ columnCount\ \=\ grid.getColumnLength();\n\ \ \ \ \ \ \ \ Grid\ substitute\ \=\ new\ Grid(rowCount,\ columnCount);\n\ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;\ i\ <\ rowCount;\ i++)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ for(int\ j\ \=\ 0;\ j\ <\ columnCount;\ j++)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ neighbours\ \=\ Computation.getNeighbourCount(grid,\ i,\ j);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (neighbours\ \=\=\ 3)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ substitute.changeGridState(i,j,true);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\ else\ if\ (neighbours\ <\ 2\ ||\ neighbours\ >\ 3)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ substitute.changeGridState(i,j,true);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ grid\ \=\ substitute;\n\ \ \ \ }\n\ \ \ \ \n\ \ \ \ public\ static\ void\ gameOfLife()\ {\n\ \ \ \ \ \ \ \ final\ GameOfLife\ game\ \=\ StandardInput.makeBoard();\n\ \ \ \ \ \ \ \ StandardInput.makeAlive(game);\n\ \ \ \ \ \ \ \ while\ (true)\ {\ \ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ TUI.draw(game.grid);\n\ \ \ \ \ \ \ \ \ \ \ \ game.step();\ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ final\ Scanner\ s\ \=\ new\ Scanner(System.in);\n\ \ \ \ \ \ \ \ \ \ \ \ final\ int\ b\ \=\ s.nextInt();\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (b\ \=\=\ 0)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \n\ \ \ \ /**\n\ \n
-comment5.params=
-comment5.target=void\ nextGridState()
-comment6.params=steps
-comment6.target=void\ drawGridIteratively(int)
-comment7.params=row\ col
-comment7.target=void\ makeCellAlive(int,\ int)
-comment8.params=
-comment8.target=void\ printGrid()
-numComments=9
+comment3.params=originalState\ neighbours
+comment3.target=boolean\ nextCellState(boolean,\ int)
+comment4.params=
+comment4.target=Grid\ nextGridState()
+comment5.params=row\ column
+comment5.target=void\ makeAlive(int,\ int)
+numComments=6

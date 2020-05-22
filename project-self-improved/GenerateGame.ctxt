@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=GenerateGame
+comment0.text=\n\ Write\ a\ description\ of\ class\ GenerateGame\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=GenerateGame()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GenerateGame\n
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ printWelcome()
+comment4.params=
+comment4.target=void\ printAvailableCommands()
+comment5.params=
+comment5.target=GameOfLife\ gameOfLifeInitialiser()
+comment6.params=
+comment6.target=java.lang.String\ getMethodInput()
+comment7.params=grid
+comment7.target=void\ step(GameOfLife)
+comment8.params=game\ howMany
+comment8.target=GameOfLife\ makeAlive(GameOfLife,\ int)
+numComments=9

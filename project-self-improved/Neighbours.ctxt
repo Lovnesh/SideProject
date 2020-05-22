@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Neighbours
+comment0.text=\n\ Gives\ the\ total\ neighbours\ of\ each\ cell\ in\ a\ grid.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Neighbours()
+comment2.params=grid
+comment2.target=java.util.HashMap\ getAllNeighbours(Grid)
+comment2.text=\n\ Fills\ the\ neighbours\ column\ by\ column\n\ |1\ 5\ 9\ \ \n\ |2\ 6\ 10\ \ \ \n\ |3\ 7\ 11\n\ |4\ 8\ 12\n\ V\n\ Fills\ like\ that\n
+numComments=3

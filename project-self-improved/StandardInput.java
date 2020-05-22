@@ -7,34 +7,35 @@ import java.util.Scanner;
  */
 public class StandardInput
 {
-    public StandardInput() {
+    // instance variables - replace the example below with your own
+    private Scanner reader;
+
+    /**
+     * Constructor for objects of class StandardInput
+     */
+    public StandardInput()
+    {
+        // initialise instance variables
+        reader = new Scanner(System.in);
+    }
+
+    /**
+     * Read a number from the Text Terminal (the Standard Input)
+     * @return    the number inserted in the text terminal
+     */
+    public int getNumberInput()
+    {
+        int inputNumber = reader.nextInt();
+        return inputNumber;
     }
     
-    public static GameOfLife makeBoard() {
-        final Scanner set = new Scanner(System.in);
-        System.out.println("Enter how many rows you want in the gird ->");
-        final int rows = set.nextInt();
-        System.out.println("Enter how many columns you want in the gird ->");
-        final int columns = set.nextInt();
-        final GameOfLife grid = new GameOfLife(rows,columns);
-        return grid;
-    }
-    
-   
-    public static void makeAlive(GameOfLife game) {
-        System.out.println("Enter how many numbers of cells do you want to be alive ->");
-        final Scanner num = new Scanner(System.in);
-        final int c = num.nextInt();
-        TUI.draw(game.getGrid());
-        int i = 0;
-        while (i < c) {
-            final Scanner cord = new Scanner(System.in);
-            System.out.println("Enter the row of the new alive cell");
-            final int x = cord.nextInt();
-            System.out.println("Enter the column of the new alive cell");
-            final int y = cord.nextInt();
-            game.getGrid().reverseState(x,y);
-            i++;
-        }
+    /**
+     * Read a String from the Text Terminal (the Standard Input)
+     * @return    the String inserted in the text terminal
+     */
+    public String getStringInput()
+    {             
+        String inputString = reader.nextLine();
+        return inputString;
     }
 }
