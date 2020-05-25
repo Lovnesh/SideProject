@@ -4,6 +4,4 @@ comment0.text=\n\ The\ test\ class\ NeighbourhoodTest.\n\n\ @author\ \ (your\ na
 comment1.params=
 comment1.target=NeighbourhoodTest()
 comment1.text=\n\ Default\ constructor\ for\ test\ class\ NeighbourhoodTest\n
-comment2.params=
-comment2.target=void\ testGenerateNeighbourhood()
-numComments=3
+numComments=2

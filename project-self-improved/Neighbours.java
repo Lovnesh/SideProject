@@ -22,14 +22,14 @@ public class Neighbours
      * @param the grid where the cells exist
      * @return HashMap the neighbourCount of every cell mapped to it
      */
-    public static HashMap<Integer, Integer> getAllNeighbours(final Grid grid){
+    public static HashMap<Integer, Integer> getAllNeighbours(final Grid grid, boolean neighbourhoodType){
         HashMap<Integer, Integer> cellNeighbours = new HashMap<>();
         int rowLength = grid.getRowLength();
         int columnLength = grid.getColumnLength();
         int i = 0;
         for(int row = 0; row < rowLength ; row++) {
             for(int column = 0; column < columnLength ; column++) {
-               int neighbours = Computation.getNeighbourCount(grid, row, column);
+               int neighbours = Computation.getNeighbourCount(grid, row, column, neighbourhoodType);
                cellNeighbours.put(i, neighbours); 
                i++;
             }

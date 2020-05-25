@@ -3,14 +3,14 @@ import java.util.HashMap;
 public class GameOfLife{
     
     private Grid grid;
-    private HashMap<Integer, Integer> cellNeighbours;
+    private boolean neighbourhoodType;
     
     /**
      * Constructor for the class GameOfLife.
      */
     public GameOfLife(){
         grid = new Grid();
-        cellNeighbours = new HashMap<>();
+        neighbourhoodType = true;
     }
     
     /**
@@ -18,9 +18,9 @@ public class GameOfLife{
      * @param row the row length of the grid
      * @param column the column length of the grid
      */
-    public GameOfLife(int row, int column){
+    public GameOfLife(int row, int column, boolean neighbourhoodType){
         grid = new Grid(row, column);
-        cellNeighbours = new HashMap<>();
+        this.neighbourhoodType = neighbourhoodType;
     }
     
     /**
@@ -45,7 +45,7 @@ public class GameOfLife{
     public Grid nextGridState() {
         int rowLength = grid.getRowLength();
         int columnLength = grid.getColumnLength();
-        HashMap<Integer, Integer> neighbours = Neighbours.getAllNeighbours(grid);
+        HashMap<Integer, Integer> neighbours = Neighbours.getAllNeighbours(grid, neighbourhoodType);
         int i = 0;
         for (int row = 0; row < rowLength ; row++) {
             for(int column = 0; column < columnLength; column++) {

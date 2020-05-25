@@ -22,7 +22,7 @@ public class ComputationTest
     
     @Test
     public void TestNeighbourhoodCount() {
-        int count = Computation.getNeighbourCount(grid, 0, 0);
+        int count = Computation.getNeighbourCount(grid, 0, 0, true);
         assertEquals(0, count);
     }
 }

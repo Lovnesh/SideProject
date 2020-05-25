@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class StandardInput
 {
     // instance variables - replace the example below with your own
-    private Scanner reader;
 
     /**
      * Constructor for objects of class StandardInput
@@ -16,15 +15,15 @@ public class StandardInput
     public StandardInput()
     {
         // initialise instance variables
-        reader = new Scanner(System.in);
     }
 
     /**
      * Read a number from the Text Terminal (the Standard Input)
      * @return    the number inserted in the text terminal
      */
-    public int getNumberInput()
+    public static int getNumberInput()
     {
+        Scanner reader = new Scanner(System.in);
         int inputNumber = reader.nextInt();
         return inputNumber;
     }
@@ -33,8 +32,9 @@ public class StandardInput
      * Read a String from the Text Terminal (the Standard Input)
      * @return    the String inserted in the text terminal
      */
-    public String getStringInput()
+    public static String getStringInput()
     {             
+        Scanner reader = new Scanner(System.in);
         String inputString = reader.nextLine();
         return inputString;
     }

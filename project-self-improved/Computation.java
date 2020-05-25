@@ -18,9 +18,15 @@ public class Computation
      * @param column where the cell is located
      * @return int the total number of alive cells in the neighbourhood.
      */
-    public static int getNeighbourCount(final Grid grid, final int row, final int column) {
+    public static int getNeighbourCount(final Grid grid, final int row, final int column, boolean neighbourhood) {
         ArrayList<Boolean> neighbourState = new ArrayList<>();
-        neighbourState = Neighbourhood.generateNeighbourhood(grid, row, column);
+        Neighbourhood neigh;
+        if(neighbourhood){
+            neigh = new MooreNeighbourhood();
+        } else{
+            neigh = new VonNeumannNeighbourhood();
+        }
+        neighbourState = neigh.generateNeighbourhood(grid, row, column);
         int neighbourCount = 0;
         for(Boolean state : neighbourState){
             if(state){
