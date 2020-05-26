@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=GUI
+comment1.params=game\ rows\ columns
+comment1.target=GUI(GameOfLife,\ int,\ int)
+comment2.params=rows\ cols
+comment2.target=void\ setupGrid(int,\ int)
+comment2.text=\n\ Setup\ a\ new\ environment\ of\ the\ given\ size.\n\ @param\ rows\ The\ number\ of\ rows.\n\ @param\ cols\ The\ number\ of\ cols;\n
+comment3.params=
+comment3.target=void\ showCells()
+comment4.params=
+comment4.target=void\ setupControls()
+comment4.text=\n\ Set\ up\ the\ animation\ controls.\n
+comment5.params=speedPercentage
+comment5.target=void\ setDelay(int)
+comment5.text=\n\ Set\ the\ animation\ delay.\n\ @param\ speedPercentage\ (100-speedPercentage)\ as\ a\ percentage\ of\ the\ LONGEST_DELAY.\n
+numComments=6

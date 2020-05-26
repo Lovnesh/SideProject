@@ -17,6 +17,7 @@ public class Main {
      * Main method to be called upon by other classes.
      */
     public static void main(String[] args) {
-        GenerateGame game = new GenerateGame();
+        //GenerateGame game = new GenerateGame();
+        GameWithGUI game = new GameWithGUI();
     }
 }

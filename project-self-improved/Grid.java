@@ -16,7 +16,7 @@ public class Grid
     public Grid()
     {
         // initialise instance variables
-        grid = new Cell[8][8];
+        grid = new Cell[50][50];
         initialiseGrid();
     }
     

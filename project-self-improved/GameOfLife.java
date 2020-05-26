@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Random;
 
 public class GameOfLife{
     
@@ -11,6 +12,7 @@ public class GameOfLife{
     public GameOfLife(){
         grid = new Grid();
         neighbourhoodType = true;
+        randomise();
     }
     
     /**
@@ -66,4 +68,41 @@ public class GameOfLife{
         grid.changeGridState(row, column, true);
     }
    
+    /**
+     * Returns the Game of Life grid with the states of all its cells
+     * This method is used in the GUI.
+     */
+    public Grid getGrid() {
+        return grid;
+    }
+    
+    /**
+     * Reset the state of the automaton to all DEAD.
+     */
+    public void reset()
+    {
+        int rowLength = grid.getRowLength();
+        int columnLength = grid.getColumnLength();
+        for(int row = 0; row < rowLength; row++) {
+            for(int column = 0; column < columnLength; column++) {
+                grid.changeGridState(row, column, false);
+            }
+        }
+    }
+    
+    public void randomise() {
+        int rowLength = grid.getRowLength();
+        int columnLength = grid.getColumnLength();
+        for(int row = 0; row < rowLength; row++) {
+            for(int column = 0; column < columnLength; column++) {
+                Random rand = new Random();
+                int num = rand.nextInt(2);
+                boolean state = false;
+                if (num == 0) {
+                    state = true;
+                }
+                grid.changeGridState(row, column, state);
+            }
+        }
+    }
 }
